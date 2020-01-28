@@ -14,7 +14,7 @@
 		display: none;
 	}
 	.navbar-dark .navbar-toggler{
-		color: rgba(255,255,255);
+		color: rgba(50, 131, 168);
 		border-color: rgba(255,255,255);
 	}
 	.heading h1{
@@ -62,7 +62,7 @@
 		display: none;
 	}
 	.navbar-dark .navbar-toggler{
-		color: rgba(255,255,255);
+		color: rgba(50, 131, 168);
 		border-color: rgba(255,255,255);
 	}
 	.heading h1{
@@ -110,7 +110,7 @@
 		display: none;
 	}
 	.navbar-dark .navbar-toggler{
-		color: rgba(255,255,255);
+		color: rgba(50, 131, 168);
 		border-color: rgba(255,255,255);
 	}
 	.heading h1{
@@ -146,5 +146,5 @@
 	.footer-distributed .footer-left{
 		text-align: center;
 	}
-	
+
 }
