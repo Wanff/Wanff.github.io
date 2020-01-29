@@ -1471,14 +1471,11 @@ hr.invis1 {
 }
 
 .gallery-list .gallery-single:hover .img-overlay {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    
 }
 
 .gallery-list .gallery-single:hover .img-overlay .hoverbutton{
-	opacity: 1;
-	top: 50%;
+
 }
 
 
