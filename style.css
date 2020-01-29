@@ -1454,6 +1454,14 @@ hr.invis1 {
 }
 .linktext{
   margin: auto auto;
+}
+.logo-container{
+  width: 220px;
+  height: 86;
+}
+.logo{
+  width: 100;
+  height: auto;
 
 }
 .gallery-list .img-overlay {
