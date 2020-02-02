@@ -1178,7 +1178,7 @@ xclip
 #about{
   margin: 0px;
 }
-.btn-dark{
+.btn-dark .btn-sm{
   padding: 0px;
 }
 .service-widget h3 a,
