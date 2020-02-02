@@ -1178,6 +1178,9 @@ xclip
 #about{
   margin: 0px;
 }
+.btn-dark{
+  padding: 0px;
+}
 .service-widget h3 a,
 .section.wb .service-widget h3,
 .section.lb .service-widget h3 {
