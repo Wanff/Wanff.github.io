@@ -1175,7 +1175,9 @@ xclip
 	top: 50%;
 	opacity: 1;
 }
-
+#about{
+  margin-bottom: 0px;
+}
 .service-widget h3 a,
 .section.wb .service-widget h3,
 .section.lb .service-widget h3 {
