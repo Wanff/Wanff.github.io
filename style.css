@@ -1187,6 +1187,11 @@ xclip
   width: auto;
   margin-bottom: 25px;
 }
+
+.button-font{
+  font-size: 25px;
+
+}
 .service-widget h3 a,
 .section.wb .service-widget h3,
 .section.lb .service-widget h3 {
