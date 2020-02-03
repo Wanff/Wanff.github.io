@@ -1185,6 +1185,7 @@ xclip
 .image{
   height: 900px;
   width: auto;
+  margin-bottom: 25px;
 }
 .service-widget h3 a,
 .section.wb .service-widget h3,
