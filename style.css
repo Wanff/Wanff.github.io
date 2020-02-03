@@ -1181,6 +1181,11 @@ xclip
 .btn-dark .btn-sm{
   padding: 0px;
 }
+
+.image{
+  height: 900px;
+  width: auto;
+}
 .service-widget h3 a,
 .section.wb .service-widget h3,
 .section.lb .service-widget h3 {
