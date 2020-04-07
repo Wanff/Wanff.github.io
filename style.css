@@ -1472,13 +1472,16 @@ hr.invis1 {
   margin: auto auto;
 }
 .logo-container{
-  width: 220px;
-  height: 86;
+  width: 110px;
+  height: 43;
 }
 .logo{
   width: 100;
   height: auto;
+}
 
+.logo-cont{
+  margin-left: 0px;
 }
 .gallery-list .img-overlay {
     position: absolute;
