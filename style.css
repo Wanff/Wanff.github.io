@@ -1480,11 +1480,46 @@ hr.invis1 {
   height: auto;
 }
 
-.btn{
-  border-radius: 5px;
-}
-.logo-cont{
-  margin-left: 0px;
+.button {
+  cursor: pointer;
+  outline: none;
+    &.outline {
+        position: relative;
+        z-index: 3;
+        background: transparent;
+        color: #1172c4;
+        font-size: 14px;
+        border-color: #1172c4;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 22px;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: all 0.2s linear;
+        a {
+            text-decoration: none;
+        }
+    }
+    &.outline:hover {
+        color: white;
+        background: #1172c4;
+        border-color: white;
+        transition: all 0.2s linear;
+    }
+    &.outline:active {
+        border-radius: 22px;
+    }
+    &.white-green {
+        font-weight: 700;
+        color: #7dc21e;
+        border-color: white;
+        background: white;
+    }
+    &.white-green:hover {
+        color: white;
+        background: #7dc21e;
+        border-color: white;
+    }
 }
 .gallery-list .img-overlay {
     position: absolute;
