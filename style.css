@@ -649,7 +649,7 @@ xclip
     right: -20px;
     z-index: 0;
 }
-.img-size{
+#img-size{
   height:100%;
   width:100;
 }
