@@ -637,6 +637,7 @@ xclip
 .right-box-pro img{
 	position: relative;
 	z-index: 2;
+
 }
 .right-box-pro::before {
     content: "";
@@ -648,8 +649,10 @@ xclip
     right: -20px;
     z-index: 0;
 }
-
-
+.img-size{
+  height:100%;
+  width:100;
+}
 
 .services-inner-box{
 	padding: 15px;
