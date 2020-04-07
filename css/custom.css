@@ -1,7 +1,5 @@
-#page-top button{
-  cursor: pointer;
-  outline: none;
-    .outline {
+#page-top .outline {
+        cursor: pointer;
         position: relative;
         z-index: 3;
         background: transparent;
@@ -18,16 +16,18 @@
             text-decoration: none;
         }
     }
+
     .outline:hover {
         color: white;
         background: #1172c4;
         border-color: white;
         transition: all 0.2s linear;
     }
+
     .outline:active {
         border-radius: 22px;
     }
-    .white-green {
+  #page-top  .white-green {
         font-weight: 700;
         color: #7dc21e;
         border-color: white;
@@ -38,7 +38,7 @@
         background: #7dc21e;
         border-color: white;
     }
-}
+
 
 #img-size{
   width: 100%;
