@@ -1183,7 +1183,7 @@ xclip
 }
 
 .image{
-  height: 600px;
+  height: 550px;
   width: auto;
   margin-bottom: 25px;
 }
@@ -1480,7 +1480,7 @@ hr.invis1 {
   height: auto;
 }
 
-.button {
+.butt {
   cursor: pointer;
   outline: none;
     &.outline {
@@ -1521,6 +1521,7 @@ hr.invis1 {
         border-color: white;
     }
 }
+
 .gallery-list .img-overlay {
     position: absolute;
     top: 10px;
