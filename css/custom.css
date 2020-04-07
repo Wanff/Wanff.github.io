@@ -1,7 +1,7 @@
 #page-top button{
   cursor: pointer;
   outline: none;
-    &.outline {
+    .outline {
         position: relative;
         z-index: 3;
         background: transparent;
@@ -18,22 +18,22 @@
             text-decoration: none;
         }
     }
-    &.outline:hover {
+    .outline:hover {
         color: white;
         background: #1172c4;
         border-color: white;
         transition: all 0.2s linear;
     }
-    &.outline:active {
+    .outline:active {
         border-radius: 22px;
     }
-    &.white-green {
+    .white-green {
         font-weight: 700;
         color: #7dc21e;
         border-color: white;
         background: white;
     }
-    &.white-green:hover {
+    .white-green:hover {
         color: white;
         background: #7dc21e;
         border-color: white;
