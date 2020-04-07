@@ -3,9 +3,9 @@
         position: relative;
         z-index: 3;
         background: transparent;
-        color: #1172c4;
+        color: #273842;
         font-size: 14px;
-        border-color: #1172c4;
+        border-color: #273842;
         border-style: solid;
         border-width: 2px;
         border-radius: 22px;
@@ -17,25 +17,25 @@
         }
     }
 
-    .outline:hover {
+#page-top .outline:hover {
         color: white;
-        background: #1172c4;
+        background: #273842;
         border-color: white;
         transition: all 0.2s linear;
     }
 
-    .outline:active {
+#page-top .outline:active {
         border-radius: 22px;
     }
   #page-top  .white-green {
         font-weight: 700;
-        color: #7dc21e;
+        color: #1172c4;
         border-color: white;
         background: white;
     }
-    .white-green:hover {
+#page-top .white-green:hover {
         color: white;
-        background: #7dc21e;
+        background: #1172c4;
         border-color: white;
     }
 
