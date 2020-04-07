@@ -1483,7 +1483,7 @@ hr.invis1 {
   height: auto;
 }
 
-.butt {
+button {
   cursor: pointer;
   outline: none;
     &.outline {
