@@ -21,13 +21,15 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Icons CSS-->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href = "global.css">
 
     <!--font CSS -->
     <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="style">
@@ -38,401 +40,68 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <base target="_blank">
 
 </head>
-<body id="page-top" class="politics_version">
-    <!-- LOADER -->
-    <div id="preloader">
-        <div id="main-ld">
-			<div id="loader"></div>
-		</div>
-    </div><!-- end loader -->
-    <!-- END LOADER -->
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container logo-cont">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <div class = "logo-container">
-			<img class="img-fluid logo" src="images/kevin.png" alt="" /> </div>
-      <!-- FIX LOGO -->
-		</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+<body>
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-md-3 col-lg-3 col-sm-4">
+          <!-- <h3>Kevin Wang</h1> -->
+          <img src = "uploads/fingerguns.png" class = "fingerguns">
+          <p class="bio">15 y/o learning AI, SWE, math, and other cool stuff</p>
+          <p>Seeking technical opportunities</p>
+          <ul>
+            <li class = "socials">
+              Twitter: <a href ="https://twitter.com/k3vwang">@k3vwang</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Skills</a>
+            <li class = "socials">
+              Github: <a href ="https://github.com/wanff">@Wanff</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <li class = "socials">
+              LinkedIn: <a href ="https://www.linkedin.com/in/kevin-wang-b2ba29192/">Kevin Wang</a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog">My Articles</a>
-            </li> -->
-			<!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Get in Touch!</a>
-            </li> -->
+            <li class = "socials">
+              kevinrowang@gmail.com
+            </li>
           </ul>
         </div>
-      </div>
-    </nav>
+        <div class = "col-md-7 col-lg-7 col-sm-4">
+          <h2 class = "bigtext">What I'm Doing Now</h2>
+          <h6 class="things">Helping run a <a href="https://sparkteen.org/">startup accelerator</a></h3>
+          <h6 class="things">Interning @<a href="https://www.nucalm.com/">NuCalm</a> (swe, business ops, front-end dev)</h3>
+          <!-- <h6 class="things">Building an autonomous drone</h3>
+          <h6 class="things">Contributing to open source agi</h3> -->
+          <h6 class="things">Exploring interesting projects</h6>
 
-	<section id="home" class="main-banner parallaxie" style="background: url('uploads/hackathonal.png')">
-		<div class="heading">
-			<h1>heyy i'm kevin</h1>
-			<h3 class="cd-headline clip is-full-width">
-				<span class="cd-words-wrapper">
-					<b class="is-visible">15</b>
-					<b>AI Developer</b>
-					<b>Innovator at TKS</b>
-					<b>Programmer</b>
-				</span>
-			</h3>
-		</div>
-	</section>
+          <h2 class = "bigtext">Other Things I've Done</h2>
+          <h6 class="things">Causal modeling to prevent preventable chronic disease. Check out a demo <a href="https://topi-health.com/topi">here</a></h3>
+          <h6 class="things">Neuromorphic computing & SNNs: basal ganglia action selection / nengoDL</h3>
+          <h6 class="things"><a href="https://www.youtube.com/watch?v=JzlCYCAaMNw&feature=youtu.be&t=32">Presented</a> at 13th annual AGI Conference ab my work with DORA (Discovery of Relationals by Analogy)</h6>
+          <h6 class="things">Winning <a href="https://www.youtube.com/watch?v=RTstaDw68AQ">2nd place</a> at AI Latin America SumMIT hackathon</h3>
 
-	<svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 85 100" preserveAspectRatio="none">
-        <path d="M-5 100 Q 0 20 5 100 Z
-            M0 100 Q 5 0 10 100
-            M5 100 Q 10 30 15 100
-            M10 100 Q 15 10 20 100
-            M15 100 Q 20 30 25 100
-            M20 100 Q 25 -10 30 100
-            M25 100 Q 30 10 35 100
-            M30 100 Q 35 30 40 100
-            M35 100 Q 40 10 45 100
-            M40 100 Q 45 50 50 100
-            M45 100 Q 50 20 55 100
-            M50 100 Q 55 40 60 100
-            M55 100 Q 60 60 65 100
-            M60 100 Q 65 50 70 100
-            M65 100 Q 70 20 75 100
-            M70 100 Q 75 45 80 100
-            M75 100 Q 80 30 85 100
-            M80 100 Q 85 20 90 100
-            M85 100 Q 90 50 95 100
-            M90 100 Q 95 25 100 100
-            M95 100 Q 100 15 105 100 Z">
-        </path>
-    </svg>
+          <!-- <h2 class= "bigtext">things i want to do</h2>
+          <h3>build things on my project idea list</h3>
+          <h3>learn how to drive, skate, and </h3> -->
 
-    <div id="about" class="section wb">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-6">
-                        <h1><b>About Me</b></h1>
-                        <h5>Hey! I'm a 15-year-old high school student who's extremely passionate about <strong>Artificial General Intelligence</strong>. I enjoy writing articles, programming projects, and exploring topics like startups, the brain, and philosophy.</h4>
-                        <h5>I'm also an Innovator at TKS, a teenage accelerator and innovation program, working to 10x my future and the futures of those around me. </h5>
-                        <h5>Check out all the things I've done in my portfolio! </h4>
+        </div>
+        <div class = "col-md-2 col-lg-2 col-sm-4">
+          <ul>
+            <li><a href = "/">Home</a></li>
+            <li><a href = "https://tks.life/profile#portfolio">Portfolio</a></li>
+            <li><a href = "https://drive.google.com/file/d/1TO_mcF2XCodna9HLTFJS7KSx-H53lRxX/view?usp=sharing">Resume</a></li>
+            <li><a href="https://medium.com/@kevn.wanf">Blog</a></li>
 
-                        <a target="_blank" href="https://tks.life/profile/kevin.wang"><button class="outline"> My Portfolio </button></a>
-                        <!-- <a class = "btn-linkedin" href = 'https://www.linkedin.com/in/kevin-wang-b2ba29192/'> LinkedIn </a>
-                        <a class = "btn btn-sm btn-dark btn-rounded" href = 'https://medium.com/@kevn.wanf'> Medium </a> -->
-                        <button type="button" class = "outline white-green" onclick="ml_account('webforms', '1752392', 'g2o8v0', 'show')"> Sign Up for My Newsletter! </button>
-                 </div><!-- end col -->
+          </ul>
+          <button type="button" class = "outline white-green" onclick="ml_account('webforms', '1752392', 'g2o8v0', 'show')"> Sign Up 4 My Newsletter </button>
 
-                <div class="col-md-6 image">
-
-                        <img src="uploads/fingerguns.png" alt="" id="img-size">
-
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-    <!-- <div id="services" class="section lb">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Skills</h3>
-                <p>some of the things i'm good at ;)</p>
-            </div> end title
-
-            <div class="row">
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-seo"></i>
-						</div>
-						<h2>Front-End Web Development 85%</h2>
-
-					</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-development"></i>
-						</div>
-						<h2>AI Development 85%</h2>
-					</div>
-                </div>
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-process"></i>
-						</div>
-						<h2>Python 90%</h2>
-					</div>
-                </div> end col
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-discuss-issue"></i>
-						</div>
-						<h2>JavaScript 75%</h2>
-             not as hot
-					</div>
-                </div> end col
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-idea"></i>
-						</div>
-						<h2>Video Editing 75%</h2>
-        	<p>after effects, premiere pro</p>
-					</div>
-                </div> end col
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon">
-							<i class="flaticon-idea-1"></i>
-						</div>
-						<h2>Swift 50%</h2>
-            better learn some before i put it on
-					</div>
-                </div> end col
-            </div> end row
-        </div> end container
-    </div> end section
-
-	<div id="portfolio" class="section lb">
-		<div class="container">
-			<div class="section-title text-left">
-                <h3>Portfolio</h3>
-                <p>some of the things i've done</p>
-            </div> end title
-fix the links bro
-			<div class="gallery-menu row">
-				<div class="col-md-12">
-					<div class="button-group filter-button-group text-left">
-						<button class="active" data-filter="*">All</button>
-						<button data-filter=".gal_p">Projects</button>
-						<button data-filter=".gal_n">Newsletters</button>
-						<button data-filter=".gal_d">Decks</button>
-            <button data-filter=".gal_pr">Presentations</button>
-
-					</div>
-				</div>
-			</div>
-
-      <div class="col-md-4 col-sm-6 gallery-grid gal_pr">
-        <div class="gallery-single fix">
-          <img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
-          <div class="img-overlay">
-            <a href="https://www.youtube.com/watch?v=RTstaDw68AQ" class="hoverbutton global-radius">Health x AI at AI Latin America SumMIT Hackathon</a>
-          </div>
         </div>
       </div>
+    </div>
 
-			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-6 gallery-grid gal_n">
-					<div class="gallery-single fix">
-						<img src="uploads/fingerguns.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="https://mailchi.mp/403181a966ba/kevins-septemberoctober-newsletter?e=c0dcfe4a15" class="hoverbutton global-radius">My September/October Newsletter</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 gallery-grid gal_n">
-					<div class="gallery-single fix">
-						<img src="uploads/hackathon.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="https://preview.mailerlite.com/c0i0g2" class="hoverbutton global-radius"> My November Newsletter</i></a>
-						</div>
-					</div>
-				</div>
-
-        <div class="col-md-4 col-sm-6 gallery-grid gal_n">
-					<div class="gallery-single fix">
-						<img src="uploads/dora.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="https://preview.mailerlite.com/m9c2d8"   class="hoverbutton global-radius"> My December Newsletter</i></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 gallery-grid gal_d">
-					<div class="gallery-single fix">
-						<img src="uploads/techstars.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="https://drive.google.com/file/d/1HJNpGbCmSbEsdchieL4Pt2ksMstcWheK/view?usp=sharing"   class="hoverbutton global-radius">Techstars Deck</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 gallery-grid gal_p">
-					<div class="gallery-single fix">
-						<img src="uploads/predlearning.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="https://medium.com/@kevn.wanf/explainable-ai-with-predicate-learning-1ba1d0bdc18f"   class="hoverbutton global-radius">Submission to CES</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 gallery-grid gal_p">
-					<div class="gallery-single fix">
-						<img src="uploads/webscraper.png" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-05.jpg"   class="hoverbutton global-radius">Webscraper for Techstars</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 gallery-grid gal_pr">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="https://www.youtube.com/watch?v=LHd6stYRfRw"   class="hoverbutton global-radius">DORA and Game-Generalization!</a>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="blog" class="section lb">
-		<div class="container">
-			<div class="section-title text-left">
-                <h3>My Articles</h3>
-                <p>I write on Medium. Check it out!</p>
-            </div> end title
-Make images link too
-			<div class="row">
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="uploads/blog-01.jpg" class="img-fluid" alt="post-img" />
-
-						</div>
-						<div class="post-info">
-							<h4>Insights from Paul Graham</h4>
-							<ul>
-                                <li>by Kevin (me!)</li>
-                                <li>Jan 3, 2019</li>
-                            </ul>
-                  <p> </p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="uploads/brain.png" class="img-fluid" alt="post-img" />
-						</div>
-						<div class="post-info">
-							<a href="https://medium.com/@kevn.wanf/the-road-to-smarter-ai-4244d3453cb1"><h4>The Road to Smarter AI</h4></a>
-							<ul>
-                                <li>by Kevin Wang</li>
-                                <li>Nov 2, 2019</li>
-                            </ul>
-							<p>Right now, AI has been growing at an explosive rate, but all of this growth has been done in "narrow AI." AI is nowhere near the general intelligence researchers originally sought. It fails to understand meaning and other basic concepts. What steps can be taken to get there?</p>
-						</div>
-					</div>
-				</div>
-
-      	<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="uploads/china.png" class="img-fluid" alt="post-img" /> </a>
-						</div>
-						<div class="post-info">
-							<a href = "https://medium.com/@kevn.wanf/get-a-new-perspective-stories-from-the-chinese-education-system-b27b923e3a6d"><h4>Get a New Perspective — Stories from the Chinese Education System</h4></a>
-							<ul>
-                                <li>by Kevin Wang</li>
-                                <li>Sept 19, 2019</li>
-                            </ul>
-                    <p>The Chinese education system is renowned worldwide. Come and read to learn about a major aspect of it and learn some personal life lessons too. </p>						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>  -->
-
-    <div id="contact" class="section db">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Get in Touch</h3>
-                <p>Hey! I would love to get in touch with any of you currently reading this right now :) Just contact me down below!</p>
-            </div><!-- end title -->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="contact_form">
-                        <div id="message"></div>
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
-										<p class="help-block text-danger"></p>
-									</div>
-									<div class="form-group">
-										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
-										<p class="help-block text-danger"></p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-										<p class="help-block text-danger"></p>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-								<div class="col-lg-12 text-center">
-									<div id="success"></div>
-									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
-								</div>
-							</div>
-						</form>
-                    </div>
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-
-
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-	<!-- Camera Slider -->
-	<script src="js/jquery.mobile.customized.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/parallaxie.js"></script>
-	<script src="js/headline.js"></script>
-	<!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.vide.js"></script>
-    <!-- MailerLite Universal -->
-    <script>
+  <!-- MailerLite Universal -->
+  <script>
     (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
     var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
     f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
@@ -442,6 +111,5 @@ Make images link too
     var ml_account = ml('accounts', '1741880', 's5n8b9u7r9', 'load');
     </script>
     <!-- End MailerLite Universal -->
-
 </body>
 </html>
