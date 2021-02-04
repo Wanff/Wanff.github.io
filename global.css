@@ -8,16 +8,109 @@ a{
 }
 a:hover{
     color: #38a05b;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .bio{
     margin-top: 1rem;
     letter-spacing: 1px;
+}
+
+.stick-container{
+    position: relative;
+    height: 434px;
+}
+
+.stickme{
+    width: 90%;
+    position: absolute;
+    right: 10%;
 
 }
-.fingerguns{
-    height: 400px;
+#normal{
+display:block;
 }
+
+#tickled{
+    display: none;
+}
+.legs{
+    width: 90%;
+    position: absolute;
+    right: 10%;
+    top: 100%;
+}
+
+.icon{
+    width: 10%;
+    position: absolute;
+    filter: grey; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+.icon:hover{
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+.twitter{
+    top: 68%;
+    left: 37%;
+}
+
+.linkedin{
+    top: 76%;
+    left: 37%;
+}
+
+.instagram{
+    top: 84.5%;
+    left: 37%;
+}
+
+.github{
+    top: 92%;
+    left: 37%;
+}
+
+
+.hey{
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.subtitle{
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 5%;
+}
+.text{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.dot{
+    list-style-type: initial;
+    margin-left: 3.5rem;
+    line-height: 1.3rem;;
+}
+.blog{
+    font-weight: 700;
+    font-size: 24px;
+}
+.me{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.newsletter{
+    font-weight: 700;
+    font-size: 24px;
+}
+
 .white-green{
     font-weight: 700;
     color: #1172c4;
