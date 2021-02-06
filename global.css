@@ -75,6 +75,91 @@ display:block;
     left: 37%;
 }
 
+@media only screen and (max-width: 1200px) {
+    .twitter{
+        top: 60%;
+        left: 37%;
+    }
+    
+    .linkedin{
+        top: 70%;
+        left: 37%;
+    }
+    
+    .instagram{
+        top: 80%;
+        left: 37%;
+    }
+    
+    .github{
+        top: 90%;
+        left: 37%;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .twitter{
+        top: 50%;
+        left: 37%;
+    }
+    
+    .linkedin{
+        top: 63%;
+        left: 37%;
+    }
+    
+    .instagram{
+        top: 78%;
+        left: 37%;
+    }
+    
+    .github{
+        top: 90%;
+        left: 37%;
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+
+    .stickme{
+        width: 50%;
+        position: absolute;
+        right: 30%;
+    
+    }
+
+    .legs{
+        width: 50%;
+        position: absolute;
+        right: 29.9%;
+        top: 65%;
+    }
+    .icon{
+        width: 5%;
+        position: absolute;
+        filter: grey; /* IE6-9 */
+        -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    }
+    .twitter{
+        top: 50%;
+        left: 50%;
+    }
+    
+    .linkedin{
+        top: 58%;
+        left: 50%;
+    }
+    
+    .instagram{
+        top: 50%;
+        left: 60%;
+    }
+    
+    .github{
+        top: 58%;
+        left: 60%;
+    }
+  }
 
 .hey{
     font-size: 36px;
