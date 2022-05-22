@@ -131,8 +131,9 @@ display:block;
         width: 50%;
         position: absolute;
         right: 29.9%;
-        top: 65%;
+        top: 45%;
     }
+
     .icon{
         width: 5%;
         position: absolute;
@@ -140,26 +141,29 @@ display:block;
         -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
         filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
     }
+
     .twitter{
-        top: 50%;
-        left: 50%;
+        top: 80%;
+        left: 55%;
     }
     
     .linkedin{
-        top: 58%;
-        left: 50%;
+        top: 80%;
+        left:45%;
     }
     
     .instagram{
-        top: 50%;
-        left: 60%;
+        top: 80%;
+        left: 35%;
     }
     
     .github{
-        top: 58%;
-        left: 60%;
+        top: 80%;
+        left: 25%;
     }
   }
+
+
 
 .hey{
     font-size: 36px;
