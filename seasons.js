@@ -79,8 +79,8 @@ function weightedRandomChoice(items, weights) {
 //Global Variables
 let prog = 1
 let growing = true
-let tree1;
-let tree2;
+let numTrees;
+let trees = [];
 let seasons = ["spring", "summer", "fall", "winter"];
 
 function startGrow(tree) {
@@ -106,6 +106,14 @@ function changeSeasons(trees){
 
         currSeasonIndex = seasons.indexOf(tree.season)
         tree.season = seasons[(currSeasonIndex + 1) % seasons.length]
+
+        if (windowWidth < 1200) {
+            tree.size = 100
+            tree.maxLevel = 7
+            tree.lenRand = 0.5
+            tree.branchProb = 0.98
+        }
+
         startGrow(tree)
     }
 }
@@ -129,20 +137,28 @@ function grow(tree) {
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight)
 
-    tree1 = new Tree({season : "winter"})
-    tree2 = new Tree({season : "winter", randBias : 6}) //important that you don't do let so that tree2 is still global variable
+    if (windowWidth < 1200) {
+        numTrees = 5
+        for(let i = 0; i < numTrees; i++){
+            trees.push(new Tree({season : "winter", randBias : 5 + rand(), size: 100, maxLevel: 7, lenRand: 0.5, branchProb: 0.98}))
+        }
+    } else {
+        numTrees = 2
+        for(let i = 0; i < numTrees; i++){
+            trees.push(new Tree({season : "winter", randBias : 5 + rand()}))
+        }
+    }
+
+
 
     let seasonButton = document.getElementById('season');
-    seasonButton.addEventListener('click', () => changeSeasons([tree1, tree2]));
+    seasonButton.addEventListener('click', () => changeSeasons(trees));
 
-    console.log(tree1)
-    console.log(tree2)
-
-    mutate(tree1)
-    startGrow(tree1)
-
-    mutate(tree2)
-    startGrow(tree2)
+    for (let tree of trees){
+        console.log(tree)
+        mutate(tree)
+        startGrow(tree)
+    }
 }
 
 function mutate(tree) {
@@ -170,19 +186,31 @@ function draw() {
 
     background(49, 28, 16)
 
-    push();
-    translate(width * 0.70, height + 15)
-    scale(1, -1)
-    translate(0, 20)
-    branch(tree1, 1, tree1.randSeed)
-    pop()
+    if (windowWidth > 1200){
+        push();
+        translate(width * 0.70, height + 15)
+        scale(1, -1)
+        translate(0, 20)
+        branch(trees[0], 1, trees[0].randSeed)
+        pop()
+        
+        push()
+        translate(width * 0.55, height + 15)
+        scale(1, -1)
+        translate(0, 20)
+        branch(trees[1], 1, trees[1].randSeed)
+        pop()
+    } else {
 
-    push()
-    translate(width * 0.55, height + 15)
-    scale(1, -1)
-    translate(0, 20)
-    branch(tree2, 1, tree2.randSeed)
-    pop()
+        for (let i = 0; i < numTrees; i ++) {
+            push()
+            translate(width * 0.2 + 0.15*width*i, height + 15)
+            scale(1, -1)
+            translate(0, 20)
+            branch(trees[i], 1, trees[i].randSeed)
+            pop()
+        }
+    }
 }
 
 function branch(tree, level, seed) {

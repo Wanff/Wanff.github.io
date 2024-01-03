@@ -26,7 +26,16 @@ canvas {
   p + ul, p + ol {
     margin-top: -1em !important;
   }
-  
+
+a{
+text-decoration: none;
+color: rgba(255, 255, 255, 0.8);
+}
+
+a:hover{
+color: rgba(255, 255, 255, 0.7);
+}
+
   .mobile-only {
     display: none;
   }
@@ -210,12 +219,6 @@ width: 70px;
   }
   
   
-  
-  a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
   .section-container div.col:nth-of-type(1) {
     width: 55ch;
   }
@@ -360,6 +363,12 @@ width: 70px;
   }
   
   /* mobile specific */
+  @media only screen and (max-device-width: 400px) {
+    #seeds a{
+      font-size: 0.9em;
+    }
+  }
+
   @media only screen and (max-device-width: 768px) {
     .header {
       flex-direction: column;
